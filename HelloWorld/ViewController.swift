@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var testLabel: UILabel!
+    
+    @IBAction func btnClicked(_ sender: Any) {
+        testLabel.text = "I love ios programming"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
